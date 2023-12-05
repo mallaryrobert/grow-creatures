@@ -260,7 +260,10 @@ justify-items: center;
         transform: translateX(-50%);
         /* use a number that fits your design */
         width: 15rem;
+        
+
     }
+
     
     .card p {
         grid-row: 4;
@@ -272,16 +275,51 @@ justify-items: center;
     .card h3 {
         grid-row: 3;
     }
-    /* .card img {
-        width: 80%;
-        display: block;
-        position: absolute;
-        top: -10rem;
-        display: block;
+    
+    
+
+}
+
+@media screen and (min-width: 50.5em) {
+    .card {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: .5rem;
+        padding: 2rem;
+        min-height: 20rem;
+        position: relative;
+    }
+    .card button {
+        grid-row: 5;
         justify-self: center;
+        display: inline-block;
+        align-self: center;
+    }
     
-    } */
+    .card img {
+        position: absolute;
+        top: -2.5rem;
+        /* used to horizontally center */
+        left: 50%;
+        transform: translateX(-50%);
+        /* use a number that fits your design */
+        width: 15rem;
+        
+
+    }
+
     
+    .card p {
+        grid-row: 4;
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+    
+    .card h3 {
+        grid-row: 3;
+    }
     
     
 
@@ -305,6 +343,7 @@ justify-items: center;
     padding: 2rem;
     min-height: 10rem;
     position: relative;
+    margin: 2rem;
 }
 .card img {
     width: 80%;
@@ -362,6 +401,41 @@ justify-items: center;
 
 }
 
+@media screen and (min-width: 50.5em) {
+    
+    
+    .prehistoric {
+        background-color: var(--color-purple);
+    
+    }
+    
+    .prehistoric button {
+        background-color: var(--color-pink);
+        }
+    
+    /*MARINE PRODUCT SECTION STYLING */
+    
+    .marine {
+        background-color: var(--color-blue);
+    }
+    
+    .marine button {
+        background-color: var(--color-purple);
+        }
+    
+    
+    /*VALUE PACK PRODUCT SECTION STYLING */
+    
+    .value {
+        background-color: var(--color-pink);
+    }
+    
+    .value button {
+        background-color: var(--color-blue);
+        }
+
+}
+
 .prehistoric {
     background-color: var(--color-purple);
 
@@ -410,12 +484,22 @@ justify-items: center;
     }
 
     .story-details {
-        display: grid;
-        grid-template-columns: 3fr, 1fr;
-        grid-template-rows: 1fr;
-        grid-gap: 0;
+        
+    }
+
+    @media screen and (min-width: 40em) {
+        .story-details {
+            display: grid;
+            grid-template-columns: 3fr, 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 0;
+    
+        }
+
 
     }
+
+
 
     .story {
         position: relative;
@@ -441,8 +525,6 @@ justify-items: center;
         top: -15rem;
         left: 0;
         content: "";
-        background: url(../img/lobsterpentool.png);
-        background-repeat: no-repeat;
         height: 100%;
         width: 100%;
         transform: rotate(70deg) translateY(10rem) translateX(10rem);
@@ -467,6 +549,48 @@ justify-items: center;
         font-size: 1.25rem;
 
     }
+
+    .care-details {
+        position: relative;
+        
+    }
+
+    @media screen and (min-width: 40em) {
+        .story {
+            grid-column: 6 / span 10;
+            background-color: #fff;
+            justify-self: start;
+            padding: 5rem;
+            font-size: 1.25rem;
+    
+        }
+
+        .care-details {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: none;
+            grid-gap: 0;
+            padding: 2rem;
+            
+        }
+
+        .product-care .shape::after {
+            position: absolute;
+            top: -15rem;
+            left: 0;
+            content: "";
+            background: url(../img/dolphinpentool.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            transform: rotate(10deg) translateY(-13rem) translateX(3rem);
+            z-index: -1;
+          
+          }
+
+    }
+
 
     /* .product-story::after {
         content: 'img=';
@@ -557,8 +681,6 @@ justify-items: center;
     top: -15rem;
     left: 0;
     content: "";
-    background: url(../img/dolphinpentool.png);
-    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     transform: rotate(10deg) translateY(-13rem) translateX(3rem);
@@ -566,15 +688,7 @@ justify-items: center;
   
   }
 
-  .care-details {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: none;
-    grid-gap: 0;
-    padding: 2rem;
-    
-}
+  
 
 
 
