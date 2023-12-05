@@ -609,11 +609,13 @@ justify-items: center;
 .faq h3 {
     grid-column: 1 / span 5; 
     display: inline-block;
+    margin: 0;
 
 }
 .faq p {
     color: white;
     font-size: 1.5rem;
+
 }
 
 
