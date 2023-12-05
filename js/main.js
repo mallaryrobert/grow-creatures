@@ -1,3 +1,5 @@
+AOS.init()
+
 /* EMAIL FORM HANDLING */
 
 $('#email-form').submit(function(e){
