@@ -232,12 +232,7 @@ justify-items: center;
     color: #fff;
     margin-top: .25rem;
 }
-.card {
-    
-    padding: 2rem;
-    min-height: 10rem;
-    position: relative;
-}
+
 
 /* large screen */
 @media screen and (min-width: 40em) {
@@ -307,7 +302,9 @@ justify-items: center;
 
 
 .card {
-    margin: 2rem;
+    padding: 2rem;
+    min-height: 10rem;
+    position: relative;
 }
 .card img {
     width: 80%;
@@ -448,7 +445,7 @@ justify-items: center;
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        transform: rotate(70deg) translateY(15rem) translateX(5rem);
+        transform: rotate(70deg) translateY(10rem) translateX(10rem);
         z-index: -1;
       
       }
