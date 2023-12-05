@@ -1,0 +1,790 @@
+/* VARIABLES */
+
+:root {
+    --font-header: 'Life Savers', serif;
+    --font-paragraph: 'Libre Franklin', sans-serif;
+    --font-link: 'Lilita One', sans-serif;
+    --color-green: #0CCE6B;
+    --color-black: #040303;
+    --color-pink: #FF00CC;
+    --color-purple: #CC00FF;
+    --color-blue: #00CCFF;
+
+
+}
+
+/* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+p {
+    font-family: var(--font-paragraph);
+}
+
+body {
+    background-color: var(--color-black);
+    
+    
+
+
+}
+
+@media screen and (min-width: 40em) {
+   body {
+    background-image: url(../img/background-lobster.png);
+    background-repeat: no-repeat;
+
+    }
+
+}
+h1 img {
+    width: 60vh;
+    padding: 5rem;
+    align-self: center;
+}
+
+/* large screen */
+@media screen and (min-width: 40em) {
+    h1 img {
+    width: 30vh;
+    padding: 2rem;
+    margin: 0;
+    align-items: start;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-link);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+h1, h2 {
+    font-family:var(--font-header);
+    color: #fff;
+    font-size: 3rem;
+    
+}
+
+h3 {
+    font-family: var(--font-paragraph);
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    font-family: var(--font-paragraph);
+}
+
+button {
+    font-family: var(--font-link);
+    color:#fff;
+    padding: 1rem 2rem;
+    margin: 0;
+    border: 0;
+}
+
+/*HEADER*/
+
+
+header ul {
+    display: none;
+
+    
+}
+
+header li {
+    float: right;
+
+}
+
+li a {
+    display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 3rem;
+  font-size: 1.5rem;
+
+}
+
+
+
+li a:hover {
+    color: var(--color-green);
+}
+/* large screen */
+@media screen and (min-width: 40em) {
+    header ul {
+        grid-column: 4 / span 9;
+        display: block;
+    list-style: none;
+    }
+
+}
+
+
+
+
+.wrap {
+    
+justify-items: center;
+
+}
+
+/* large screen */
+@media screen and (min-width: 40em) {
+    .wrap {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        grid-gap: 2rem;
+    }
+
+}
+
+
+
+/* HERO */
+
+.hero {
+    padding: 1rem;
+}
+
+
+.hero h1{
+    position: relative;
+    justify-self: center;
+    background-color: rgba(255,255,255, 2);
+    color: var(--color-black);
+    font-size: 3rem;
+    padding: 2rem;
+    display: inline-block;
+
+}
+
+/* large screen */
+@media screen and (min-width: 40em) {
+    .hero h1 {
+        grid-column: 6 / span 6;
+        justify-self: start;
+        background-color: rgba(255,255,255, 2);
+        color: var(--color-black);
+        font-size: 5rem;
+        padding: 2rem;
+        display: inline-block;
+    }
+
+}
+
+
+
+
+.hero h1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: .5rem solid var(--color-blue);
+    transform: rotate(5deg) translateY(-1rem) translateX(1rem) ;
+  }
+
+
+/* PRODUCT */
+
+/* GENERAL SECTION STYLES */
+
+/* .product img {
+    width: 100%;
+} */
+
+
+
+
+.product h2 {
+    grid-column: 2 / span 7;
+    padding: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.product h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+.product p {
+    font-size: 1rem;
+    color: #fff;
+    margin-top: .25rem;
+}
+.card {
+    
+    padding: 2rem;
+    min-height: 10rem;
+    position: relative;
+}
+
+/* large screen */
+@media screen and (min-width: 40em) {
+    .card {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: .5rem;
+        padding: 2rem;
+        min-height: 20rem;
+        position: relative;
+    }
+    .card button {
+        grid-row: 5;
+        justify-self: center;
+        display: inline-block;
+        align-self: center;
+    }
+    
+    .card img {
+        justify-self: center;
+    }
+    
+    .card p {
+        grid-row: 4;
+        text-align: center;
+        font-size: 1.5rem;
+    
+    }
+    
+    .card h3 {
+        grid-row: 3;
+    }
+    .card img {
+        width: 80%;
+        display: block;
+        position: absolute;
+        top: -10rem;
+        display: block;
+        justify-self: center;
+    
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+/* .card::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: .5rem solid yellow;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: rotate(5deg);
+} */
+
+
+.card {
+    margin: 2rem;
+}
+.card img {
+    width: 80%;
+    position: absolute;
+    top: -10rem;
+    justify-self: center;
+
+}
+
+.product h2 {
+    text-align: center;
+}
+
+.product .card {
+    align-items: center;
+
+}
+
+
+/* PREHISTORIC PRODUCT SECTION STYLING */
+
+@media screen and (min-width: 40em) {
+    .prehistoric {
+        grid-column: 1 / span 4;
+        background-color: var(--color-purple);
+    
+    }
+    
+    .prehistoric button {
+        background-color: var(--color-pink);
+        }
+    
+    /*MARINE PRODUCT SECTION STYLING */
+    
+    .marine {
+        grid-column:  5 / span 4;
+        background-color: var(--color-blue);
+    }
+    
+    .marine button {
+        background-color: var(--color-purple);
+        }
+    
+    
+    /*VALUE PACK PRODUCT SECTION STYLING */
+    
+    .value {
+        grid-column: 9 / span 4;
+        background-color: var(--color-pink);
+    }
+    
+    .value button {
+        background-color: var(--color-blue);
+        }
+
+}
+
+.prehistoric {
+    background-color: var(--color-purple);
+
+}
+
+.prehistoric button {
+    background-color: var(--color-pink);
+    }
+
+/*MARINE PRODUCT SECTION STYLING */
+
+.marine {
+    background-color: var(--color-blue);
+}
+
+.marine button {
+    background-color: var(--color-purple);
+    }
+
+
+/*VALUE PACK PRODUCT SECTION STYLING */
+
+.value {
+    background-color: var(--color-pink);
+}
+
+.value button {
+    background-color: var(--color-blue);
+    }
+
+
+
+    /*PRODUCT STORY */
+    
+    .product-story {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+
+
+    .product-story img {
+        width: 100%;
+        transform: translateX(5rem) ;
+
+    }
+
+    .story-details {
+        display: grid;
+        grid-template-columns: 3fr, 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+
+    }
+
+    .story {
+        position: relative;
+        z-index: 1;
+        transform: translateY(10rem) ;
+
+    }
+
+    .story::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        height: 100%;
+        width: 100%;
+        border: .5rem solid yellow;
+        border-right: 0;
+        transform: rotate(-5deg) translateY(-2rem) translateX(1rem) ;
+      }
+
+      .story::after {
+        position: absolute;
+        top: -15rem;
+        left: 0;
+        content: "";
+        background: url(../img/lobsterpentool.png);
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        transform: rotate(70deg) translateY(15rem) translateX(5rem);
+        z-index: -1;
+      
+      }
+    
+
+
+    .product-story h2 {
+        grid-column: 1 / span 4;
+        color: var(--color-black);
+        margin: 0;
+        
+    }
+
+    .story{
+        grid-column: 6 / span 10;
+        background-color: #fff;
+        justify-self: start;
+        padding: 5rem;
+        font-size: 1.25rem;
+
+    }
+
+    /* .product-story::after {
+        content: 'img=';
+        width: 100%;
+        height: 100%;
+        border: .5rem solid var(--color-blue);
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transform: rotate(5deg);
+    } */
+
+    
+
+
+/*PRODUCT CARE*/
+
+.product-care img {
+    width: 100%;
+    height: 100%;
+    transform: translateX(-1rem) translateY(-1rem);
+    
+
+
+}
+
+
+.product-care .shape {
+    grid-column: 1 / span 10;
+    grid-row: none;
+    background-color: #fff;
+    justify-self: start;
+    padding: 2rem;
+
+
+
+}
+
+.product-care .shape li {
+    grid-column: 3 / span 5;
+}
+ 
+
+
+
+.product-care h2 {
+    grid-column: 4 / span 3 ;
+    color: black;
+    margin: 0;
+}
+
+.product-care li {
+     text-decoration: none;
+     list-style: none;
+     font-family: var(--font-paragraph);
+     padding: 0;
+     margin-bottom: .5rem;
+     font-size: 1.25rem;
+
+
+} 
+
+.product-care ul {
+    grid-column: 4 / span 3;   
+}
+
+.product-care .shape {
+    transform: translateY(10rem) translateX(-3rem);
+
+}
+
+.product-care .shape::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border: .5rem solid var(--color-blue);
+    border-left: 0;
+    transform: rotate(-5deg) translateY(-1rem) translateX(-2rem);
+  }
+
+  .product-care .shape::after {
+    position: absolute;
+    top: -15rem;
+    left: 0;
+    content: "";
+    background: url(../img/dolphinpentool.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    transform: rotate(10deg) translateY(-13rem) translateX(3rem);
+    z-index: -1;
+  
+  }
+
+  .care-details {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: none;
+    grid-gap: 0;
+    padding: 2rem;
+    
+}
+
+
+
+/*BRANDS*/
+
+.brands .wrap {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+}
+
+.logos img {
+    width: 30vh;
+    margin: 2rem;
+}
+
+@media screen and (min-width: 40em) {
+    .logos  {
+        
+    }
+    
+    
+    
+}
+
+
+
+/*FAQ'S*/
+.faq {
+    padding-top: 10rem;
+}
+.faq h3 {
+    grid-column: 1 / span 5; 
+    display: inline-block;
+
+}
+.faq p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.faq .wrap {
+    grid-template-rows: repeat(3, auto);
+    padding: 2rem;
+}
+
+.question1 {
+    border: .5rem solid var(--color-green);
+    border-left: 0;
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    padding: 3rem;
+    transform:rotate(-5deg) translateX(-4rem) translateY(5rem);
+
+}
+
+.question2 {
+    grid-column: 6 / span 6;
+    grid-row: 2;
+    border: .5rem solid var(--color-blue);
+    border-right: 0;
+    padding: 3rem;
+    transform:rotate(-5deg) translateX(12rem) translateY(4rem);
+
+
+
+}
+
+.question3 {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    border: .5rem solid var(--color-pink);
+    border-left: 0;
+    padding: 3rem;
+    transform:rotate(5deg) translateX(-4rem) translateY(-3rem);
+
+
+
+
+}
+
+.faq .title {
+
+    grid-column: 8 / span 3;
+    grid-row: 1 / span 3;
+    z-index: -1;
+}
+.faq img {
+    width: 80%;
+}
+
+
+/*FORM */
+
+.form-header {
+
+   grid-column: 5 / span 4;
+   align-items: center;
+   padding: 5rem;
+   background-image: url(../img/background-dino-form.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   justify-self: stretch;
+
+}
+
+.form-header h1  {
+    text-align: center;
+    margin: 0;
+
+}
+
+.form-header p {
+    grid-row: 1;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+
+}
+
+.form-input input {
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    background-color: #e5e5e5e5;
+  }
+  
+  .form-input input:focus {
+    background-color: var(--color-green);
+    color: #fff
+  }
+  
+  
+  .form-input button {
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 0;
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 1.5rem;
+    grid-column: 6 / span 2;
+
+  }
+  .form-input button:hover{
+    background-color: var(--color-blue);
+    color: white;
+  }
+  
+  .form-input {
+    
+  }
+  .form-input label {
+    position: absolute;
+    left: -99999px;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+/*FOOTER*/
+
+footer {
+    padding: 2rem;
+}
+
+footer li {
+    float: right;
+
+}
+
+footer ul {
+    float: right;
+    list-style: none;
+    display: inline;
+}
+
+@media screen and (min-width: 40em) {
+    footer ul {
+        float: right;
+        display: inline;
+        justify-self: end;
+        align-self: end;
+
+        grid-column: 4 / span 9;
+
+
+    }
+    footer li {
+        float: right;
+    
+    }
+}
+
+
+.fa-brands {
+    font-size: 2rem;
+    padding: 1.5rem;
+    align-self: center;
+    justify-self: center;
+    color: #fff;
+}
+
+.fa-brands:hover{
+   color: var(--color-green);
+}
+
+
+footer p {
+    font-size: 1.25rem;
+    padding: 0 0 0 2rem;
+    margin: 0;
+    color: #fff;
+
+}
+
