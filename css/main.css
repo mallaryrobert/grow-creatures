@@ -728,9 +728,13 @@ justify-items: center;
     text-align: center;
 }
 
+.logos {
+    text-align: center;
+}
+
 @media screen and (min-width: 40em) {
-    .logos img {
-        
+    .logos {
+        text-align: center
     }
     
     
