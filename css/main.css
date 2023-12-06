@@ -347,7 +347,7 @@ justify-items: center;
 }
 .card img {
     width: 80%;
-    position: absolute;
+    position: static;
     top: -10rem;
     justify-self: center;
 
@@ -397,6 +397,13 @@ justify-items: center;
     
     .value button {
         background-color: var(--color-blue);
+        }
+        .card img {
+            width: 80%;
+            position: absolute;
+            top: -10rem;
+            justify-self: center;
+        
         }
 
 }
@@ -495,6 +502,20 @@ justify-items: center;
             grid-gap: 0;
     
         }
+
+        .story::after {
+            position: absolute;
+            top: -15rem;
+            left: 0;
+            content: "";
+            background: url(../img/lobsterpentool.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            transform: rotate(70deg) translateY(10rem) translateX(10rem);
+            z-index: -1;
+          
+          }
 
 
     }
@@ -704,10 +725,11 @@ justify-items: center;
 .logos img {
     width: 30vh;
     margin: 2rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 40em) {
-    .logos  {
+    .logos img {
         
     }
     
@@ -735,8 +757,15 @@ justify-items: center;
 
 
 .faq .wrap {
-    grid-template-rows: repeat(3, auto);
-    padding: 2rem;
+    
+}
+
+@media screen and (min-width: 40em) {
+    .faq .wrap {
+        grid-template-rows: repeat(3, auto);
+        padding: 2rem;
+    }
+
 }
 
 .question1 {
