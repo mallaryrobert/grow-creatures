@@ -1,4 +1,3 @@
-AOS.init()
 
 /* EMAIL FORM HANDLING */
 
