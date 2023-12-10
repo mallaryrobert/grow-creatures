@@ -1147,10 +1147,14 @@ footer ul {
     align-self: center;
     justify-self: center;
     color: #fff;
+    transition: transform .2s;
+
 }
 
 .fa-brands:hover{
    color: var(--color-green);
+   transform: scale(1.2);
+
 }
 
 
