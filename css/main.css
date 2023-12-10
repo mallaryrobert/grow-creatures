@@ -44,9 +44,10 @@ body {
 
 }
 h1 img {
-    width: 100%;
+    width: 50%;
     padding: 1rem;
-    align-self: center;
+    margin: 0;
+    align-items: center;
 }
 
 /* large screen */
@@ -93,14 +94,24 @@ button {
     margin: 0;
     border: 0;
 }
+ul {
+    list-style: none;
+    padding: 0;
+}
 
 /*HEADER*/
 
 
 header ul {
     display: none;
+    margin: 0;
 
     
+}
+
+li {
+    list-style: none;
+    margin: 0;
 }
 
 header li {
@@ -743,6 +754,7 @@ justify-items: center;
 
 .product-care ul {
     grid-column: 4 / span 3;   
+    
 }
 
 .product-care .shape {
