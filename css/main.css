@@ -44,10 +44,10 @@ body {
 
 }
 h1 img {
+    place-items: center;
     width: 50%;
     padding: 1rem;
     margin: 0;
-    align-items: center;
 }
 
 /* large screen */
@@ -614,7 +614,7 @@ justify-items: center;
         width: 100%;
         border: .5rem solid yellow;
         border-right: 0;
-        transform: rotate(-5deg) translateY(-2rem) translateX(1rem) ;
+        transform: rotate(-5deg) translateY(-2rem) translateX(3rem) ;
       }
 
       .story::after {
