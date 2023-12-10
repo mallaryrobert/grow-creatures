@@ -948,7 +948,7 @@ transition: transform .2s;
         grid-column: 1 / span 6;
         grid-row: 1;
         padding: 3rem;
-        transform:rotate(-5deg) translateX(-4rem) translateY(5rem);
+        transform:rotate(-5deg) translateX(-6rem) translateY(5rem);
     
     }
     
@@ -960,7 +960,7 @@ transition: transform .2s;
         display: block;
 
         padding: 3rem;
-        transform:rotate(-5deg) translateX(12rem) translateY(4rem);
+        transform:rotate(-5deg) translateX(14rem) translateY(4rem);
     
     
     
@@ -973,7 +973,7 @@ transition: transform .2s;
         border-left: 0;
         display: block;
         padding: 3rem;
-        transform:rotate(5deg) translateX(-4rem) translateY(-3rem);
+        transform:rotate(5deg) translateX(-6rem) translateY(-3rem);
     
     
     
