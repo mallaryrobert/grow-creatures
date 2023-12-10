@@ -399,7 +399,7 @@ justify-items: center;
 
 
 .card {
-    padding: 12rem 2rem 2rem 2rem;
+    padding: 0 1rem 1rem 1rem;
     min-height: 10rem;
     position: relative;
     margin: 2rem;
@@ -463,6 +463,12 @@ justify-items: center;
             top: -10rem;
             justify-self: center;
         
+        }
+        .card {
+            padding: 12rem 2rem 2rem 2rem;
+            min-height: 10rem;
+            position: relative;
+            margin: 2rem;
         }
 
 }
@@ -833,6 +839,8 @@ justify-items: center;
     .question1 {
         border: .5rem solid var(--color-green);
         border-left: 0;
+        display: block;
+
         grid-column: 1 / span 6;
         grid-row: 1;
         padding: 3rem;
@@ -845,6 +853,8 @@ justify-items: center;
         grid-row: 2;
         border: .5rem solid var(--color-blue);
         border-right: 0;
+        display: block;
+
         padding: 3rem;
         transform:rotate(-5deg) translateX(12rem) translateY(4rem);
     
@@ -857,6 +867,7 @@ justify-items: center;
         grid-row: 3;
         border: .5rem solid var(--color-pink);
         border-left: 0;
+        display: block;
         padding: 3rem;
         transform:rotate(5deg) translateX(-4rem) translateY(-3rem);
     
