@@ -1123,6 +1123,10 @@ footer ul {
     display: inline;
 }
 
+footer img {
+    display: none;
+}
+
 @media screen and (min-width: 40em) {
     footer ul {
         float: right;
@@ -1137,6 +1141,10 @@ footer ul {
     footer li {
         float: right;
     
+    }
+
+    footer img {
+        display: block;
     }
 }
 
