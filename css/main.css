@@ -416,6 +416,8 @@ transition: transform .2s;
 }
 .card button:hover {
     transform: scale(1.2);
+    color: var(--color-green);
+    background-color: #fff;
 }
 
 .card {
