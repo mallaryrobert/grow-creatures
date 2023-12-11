@@ -1070,6 +1070,8 @@ section.form {
     padding: 1rem;
     border: 0;
     background-color: #e5e5e5e5;
+    font-family: var(--font-paragraph);
+
   }
   
   .form-input input:focus {
@@ -1174,4 +1176,6 @@ footer p {
     color: #fff;
 
 }
+
+
 
